@@ -1,0 +1,252 @@
+@import 'variables';
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
+  background-color: $bg;
+  font-weight: $fw-bld;
+}
+
+.header{
+  @include flex-between;
+}
+
+main{
+  @include flex-col;
+  gap: 2rem;
+  padding-inline: 1rem;
+  padding-block-start: $fs-18;
+  margin-block-end: 6.25rem;
+  text-align: center;
+
+    header{
+      align-self: stretch;
+    }
+
+    .hero-section{
+      @include flex-col;
+      align-self: stretch;
+
+        .body{
+          max-width: 24ch;
+          margin-block: 1rem 2rem;
+           @media screen and (min-width: 25rem) and (max-width: 47.9rem) {
+            max-width: 30ch;
+           }
+        }
+
+        .container-cards{
+          @include flex-col;
+          align-items: center;
+          gap: $fs-24;
+          width: 100%;
+
+            .ux-apps{
+              @include flex;
+              gap: 1rem;
+              align-items: stretch;
+              height: 11.37rem;
+              align-self: stretch;
+              
+                div{
+                  width: 10rem;
+                }
+            }
+        }
+    }
+}
+
+//About section
+.container{
+  @include flex-col;
+  text-align: center;
+  padding-inline: 1rem;
+  gap: 2.5rem;
+  margin-block-end: 6.25rem;
+
+    .text-side{
+      @include flex-col;
+      gap: $fs-24;
+    }
+}
+
+.work-section{
+  overflow: hidden;
+  @include flex-col;
+  margin-block-end: 7.5rem;
+}
+
+footer{
+  padding-inline: 1rem;
+  padding-block-end: 2.165rem;
+
+    .contact-section{
+      background-color: $heading-black;
+      padding: 3rem 1.5rem;
+      border-radius: 10px;
+      @include flex-col;
+      text-align: center;
+      margin-block-end: 2.65rem;
+
+        h2,
+        p{
+          color: $bg;
+        }
+
+        p{
+          margin-block: $fs-24;
+        }
+    }
+}
+
+@media screen and (min-width: 48rem) {
+  main{
+    padding-inline: 2.5rem;
+    padding-block-start: 2.1875rem;
+    margin-block-end: 7.5rem;
+    gap: 4.375em;
+
+      .hero-section{
+
+        .body{
+          max-width: 45ch;
+          margin-block: 1.6875rem 4rem;
+        }
+
+        .container-cards{
+          display: grid;
+          grid-template-areas: "graphic ux"
+                               "graphic illustration"
+                               "photo motion";
+          /* justify-content: center;
+          align-items: center; */
+          /* align-items: stretch; */
+          justify-content: center;
+          align-self: stretch;
+          gap: $fs-24;
+          /* width: 100%; */
+
+            .graphic{
+              grid-area: graphic;
+            }
+
+            .ux-apps{
+              grid-area: ux;
+            }
+
+            .illustration{
+              grid-area: illustration;
+            }
+
+            .photo{
+              grid-area: photo;
+            }
+
+            .motion{
+              grid-area: motion;
+            }
+        }
+      }
+  }
+
+  .container{
+    @include flex;
+    text-align: left;
+    padding-inline: 0 2.5rem;
+    margin-block-end: 5.5rem;
+    overflow: hidden;
+  
+      .img-about{
+        transform: translateX(-2.5rem);
+      }
+
+      .text-side{
+        align-items: start;
+      }
+  }
+
+  footer{
+    padding-inline: 2.5rem;
+    padding-block-end: 3.75rem;
+  
+      .contact-section{
+        background-color: $heading-black;
+        padding-inline: 4.6875rem;
+        padding-block: 3.5rem 4rem;
+        border-radius: 10px;
+        @include flex-col;
+        text-align: center;
+        margin-block-end: 2.65rem;
+  
+          h2,
+          p{
+            color: $bg;
+          }
+  
+          p{
+            margin-block: $fs-24;
+          }
+      }
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  main{
+    padding-inline: 10.3125rem;
+    padding-block-start: 2.5rem;
+    margin-block-end: 8.5rem;
+
+    .hero-section{
+
+      .body{
+        max-width: 55ch;
+      }
+
+      .container-cards{
+        grid-template-areas:
+        "graphic ux photo"
+        "graphic illustration motion";
+      }
+    }
+  }
+
+  .container{
+    padding-inline: 10.3125rem;
+    gap: 7.5rem;
+  
+      .img-about{
+        transform: translateX(0);
+      }
+
+      .text-side{
+        align-items: start;
+      }
+  }
+
+  footer{
+    padding-inline: 10.3125rem;
+  
+      .contact-section{
+        padding-inline:4.0625rem 5.9375rem;
+        padding-block: 5rem;
+        @include flex;
+        gap: 11.375rem;
+        text-align: left;
+  
+          h2,
+          p{
+            color: $bg;
+          }
+  
+          p{
+            margin-block: $fs-24 0;
+            max-width: 42ch;
+          }
+      }
+    }
+}

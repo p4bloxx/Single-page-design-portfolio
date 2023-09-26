@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single page designer portfolio</title>
+  <link rel="stylesheet" href="Glide/glide.core.css">
+  <link rel="stylesheet" href="Glide/glide.theme.css">
+  <link rel="stylesheet" href="SASS/variables.css">
+  <link rel="stylesheet" href="SASS/main.css">
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div id="primary-header" class="header">
+        <a href="#"><img src="ASSETS/logo.svg" alt="logo of amy - a white outline circle on black background square" class="logo"></a>
+        <button type="button" class="cta">Free Consultation</button>
+      </div>
+    </header>
+    <div class="hero-section">
+        <h1>Design solutions made easy</h1>
+        <p class="body">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+      <div class="container-cards">
+        <div class="card graphic">
+          <img src="ASSETS/pattern-graphic-design.svg" alt="">
+          <p>Graphic Design</p>
+        </div>
+        <div class="ux-apps">
+          <div class="card ui-ux">
+            <img src="ASSETS/pattern-ui-ux.svg" alt="">
+            <p>UI/UX</p>
+          </div>
+          <div class="card apps">
+            <img src="ASSETS/pattern-apps.svg" alt="">
+            <p>Apps</p>
+          </div>
+        </div>
+        <div class="card illustration">
+          <img src="ASSETS/pattern-illustrations.svg" alt="">
+          <p>Illustrations</p>
+        </div>
+        <div class="card photo">
+          <img src="ASSETS/pattern-photography.svg" alt="">
+          <p>Photography</p>
+        </div>
+        <div class="card motion">
+          <img src="ASSETS/pattern-motion-graphics.svg" alt="">
+          <p>Motion Graphics</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="about-section">
+    <div class="container">
+      <img src="ASSETS/image-amy.webp" alt="image of Amy" class="img-about">
+      <div class="text-side">
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p class="body">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <button class="cta cta2" type="button">Free Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-section">
+    <div class="glide">
+      <h3>My Work</h3>
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide"><img src="ASSETS/image-slide-1.jpg" alt="illustration pattern work"></li>
+          <li class="glide__slide"><img src="ASSETS/image-slide-2.jpg" alt="illustration for newspaper"></li>
+          <li class="glide__slide"><img src="ASSETS/image-slide-3.jpg" alt="cover book work"></li>
+          <li class="glide__slide"><img src="ASSETS/image-slide-4.jpg" alt="UI/UX work"></li>
+          <li class="glide__slide"><img src="ASSETS/image-slide-5.jpg" alt="potography work"></li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left arrow" data-glide-dir="<"><img src="ASSETS/icon-arrow-left.svg" alt=""></button>
+        <button class="glide__arrow glide__arrow--right arrow" data-glide-dir=">"><img src="ASSETS/icon-arrow-right.svg" alt=""></button>
+      </div>      
+    </div>    
+  </section>
+
+  <footer>
+    <div class="contact-section">
+      <div class="text">
+        <h2>Book a call with me</h2>
+        <p class="body">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+      </div>
+      <button class="cta cta2" type="button">Free Consultation</button>
+    </div>
+    <div id="secondary-header" class="header">
+      <a href="#"><img src="ASSETS/logo.svg" alt="logo of amy - a white outline circle on black background square" class="logo"></a>
+      <button type="button" class="cta">Free Consultation</button>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+</body>
+</html>
