@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/single-page-designer-portfolio-html-css-js-Dhi0a454mY](https://www.frontendmentor.io/solutions/single-page-designer-portfolio-html-css-js-Dhi0a454mY)
+- Live Site URL: [https://github.com/p4bloxx/Single-page-design-portfolio/settings/pages](https://github.com/p4bloxx/Single-page-design-portfolio/settings/pages)
 
 ## My process
 
